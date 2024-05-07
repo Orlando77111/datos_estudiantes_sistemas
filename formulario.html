@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Colegio San Jose de Guanenta</h1>
+    <h1>Especialidad en Sistemas - 2024</h1>
+    <form id="myForm">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" required>
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+    </form>
+
+    <form id="From2">
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+        <label for="lugarNacimiento">Lugar de Nacimiento:</label>
+        <input type="text" id="lugarNacimiento" name="lugarNacimiento" required>
+
+        <label for="Edad">Edad:</label>
+        <input type="number" min="0" max="100" id="Edad" name="Edad" required>
+    </form>
+    <form>
+        <label for="tipoDocumento">Tipo de Documento:</label>
+        <select id="tipoDocumento" name="tipoDocumento" required>
+            <option value="">Seleccione...</option>
+            <option value="I.D">I.D</option>
+            <option value="C.C">C.C</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+    
+        <label for="numeroDocumento">Número de Documento:</label>
+        <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+    
+    </form>
+
+
+    <script>
+        const form = document.getElementById('myForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+            // Validar los campos del formulario
+            const Apellido = document.getElementById('apellido').value;
+            const nombre = document.getElementById('nombre').value;
+
+
+            if (nombre === '' || apellido === '' ) {
+                alert('Por favor, complete todos los campos del formulario.');
+                return;
+            }
+
+            // Aquí puedes realizar otras acciones con los datos del formulario, como enviarlos a un servidor
+
+            // Limpiar el formulario después de enviarlo
+            form.reset();
+        });
+    </script>
+</body>
+</html>
