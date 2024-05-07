@@ -27,7 +27,7 @@
         <label for="Edad">Edad:</label>
         <input type="number" min="0" max="100" id="Edad" name="Edad" required>
     </form>
-    <form>
+    <form id="From3">
         <label for="tipoDocumento">Tipo de Documento:</label>
         <select id="tipoDocumento" name="tipoDocumento" required>
             <option value="">Seleccione...</option>
@@ -41,6 +41,89 @@
     
     </form>
 
+
+
+    <form id="myForm">
+        <label for="Direccion">Direccion:</label>
+        <input type="text" id="Direccion" name="Direccion" required>
+
+        <label for="Barrio">Barrio:</label>
+        <input type="text" id="Barrio" name="Barrio" required>
+
+        <label for="Ciudad">Edad:</label>
+        <input type="text" id="Ciudad" name="Ciudad" required>
+
+    </form>
+
+    <form id="myForm">
+        <label for="Telefono">Telefono:</label>
+        <input type="text" id="Telefono" name="Telefono" required>
+
+        <label for="Celular">Celular:</label>
+        <input type="text" id="Celular" name="Celular" required>
+
+    </form>
+
+    <form id="myForm">
+        <label for="E-mail personal:">E-mail personal:</label>
+        <input type="text" id="E-mail personal" name="E-mail personal" required>
+
+        <label for="E-mail inst:">E-mail inst:</label>
+        <input type="text" id="E-mail inst:" name="E-mail inst:" required>
+
+    </form>
+
+
+    <form id="myForm">
+        <label for="Tipo de sangre">Tipo de sangre:</label>
+        <input type="text" id="Tipo de sangre" name="Tipo de sangre" required>
+
+        <label for="EPS">EPS:</label>
+        <input type="text" id="EPS" name="EPS" required>
+
+    </form>
+
+    <form action="">
+        <label for="¿Sufre alguna enfermendad?">¿Sufre alguna enfermendad? </label>
+        <input type="radio" value="si" name="pregunta" id="pregunta_ si"/> SI
+        <input type="radio" value="no" name="pregunta" id="pregunta_ no"/> NO
+
+        <label for="Cuál?">Cuál?:</label>
+        <input type="text" id="Cuál?" name="Cuál?" required>
+
+    </form>
+
+
+    <form action="">
+
+        <label for="Estrato socioeconómico">Estrato socioeconómico: </label>
+        <input type="text" id="Estrato" name="Estrato" required>
+
+        <label for="Familias en Acción:">Familias en Acción: </label>
+        <input type="radio" value="si" name="pregunta" id="pregunta_ si"/> SI
+        <input type="radio" value="no" name="pregunta" id="pregunta_ no"/> NO
+
+    </form>
+
+
+    <form id="myForm">
+        <label for="Tipo de religion">Tipo de religion:</label>
+        <input type="text" id="Tipo de religion" name="Tipo de religion" required>
+
+        
+    </form>   
+
+    <form action="">
+        <label for="Relación Padres:">Relación Padres: </label>
+        <input type="radio" value="si" name="pregunta" id="pregunta_ si"/>Casados
+        <input type="radio" value="no" name="pregunta" id="pregunta_ no"/> Divorciados
+        <input type="radio" value="no" name="pregunta" id="pregunta_ no"/> Unión Libre
+
+
+        <label for="Cuál?">Cuál?:</label>
+        <input type="text" id="Cuál?" name="Cuál?" required>
+
+    </form>
 
     <script>
         const form = document.getElementById('myForm');
@@ -64,5 +147,7 @@
             form.reset();
         });
     </script>
+
+
 </body>
 </html>
